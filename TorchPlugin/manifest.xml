@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <PluginManifest xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Name>PluginTemplate</Name>
-  <Guid>c889318f-9835-4814-b26e-979242caeb0c</Guid>
-  <Repository>PluginTemplate</Repository>
+  <Name>DefIdToStringFix</Name>
+  <Guid>e368127c-0676-4ff0-9e8c-f32207dcb12a</Guid>
+  <Repository>DefIdToStringFix</Repository>
   <Version>v1.0.0</Version>
 </PluginManifest>

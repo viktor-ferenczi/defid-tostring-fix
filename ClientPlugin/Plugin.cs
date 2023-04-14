@@ -15,7 +15,7 @@ namespace ClientPlugin
     // ReSharper disable once UnusedType.Global
     public class Plugin : IPlugin, ICommonPlugin
     {
-        public const string Name = "PluginTemplate";
+        public const string Name = "DefIdToStringFix";
         public static Plugin Instance { get; private set; }
 
         public long Tick { get; private set; }
@@ -112,7 +112,7 @@ namespace ClientPlugin
 
         private void CustomUpdate()
         {
-            // TODO: Put your update code here. It is called on every simulation frame!
+            MyDefinitionIdToStringPatch.Update();
         }
 
 

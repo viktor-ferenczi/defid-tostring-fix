@@ -15,9 +15,14 @@
     <Compile Include="$(MSBuildThisFileDirectory)Logging\IPluginLogger.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Logging\LogFormatter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Logging\PluginLogger.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Patches\MyDefinitionIdToStringPatch.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Patches\PatchHelpers.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Plugin\Common.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Plugin\ICommonPlugin.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\TwoLayerCache.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\CacheStat.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\RwLock.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\RwLockDictionary.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="$(MSBuildThisFileDirectory)..\Edit-and-run-before-opening-solution.bat">

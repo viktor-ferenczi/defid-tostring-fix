@@ -20,7 +20,7 @@ namespace TorchPlugin
     // ReSharper disable once ClassNeverInstantiated.Global
     public class Plugin : TorchPluginBase, IWpfPlugin, ICommonPlugin
     {
-        public const string PluginName = "PluginTemplate";
+        public const string PluginName = "DefIdToStringFix";
         public static Plugin Instance { get; private set; }
 
         public long Tick { get; private set; }
@@ -155,7 +155,7 @@ namespace TorchPlugin
 
         private void CustomUpdate()
         {
-            // TODO: Put your update processing here. It is called on every simulation frame!
+            MyDefinitionIdToStringPatch.Update();
         }
     }
 }
