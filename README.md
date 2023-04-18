@@ -1,4 +1,20 @@
-# MyDefinitionId.ToString performance and deadlock fix
+# OBSOLETE
+
+Please use these plugins instead:
+* https://github.com/viktor-ferenczi/se-bugfixes
+* https://github.com/viktor-ferenczi/performance-improvements
+
+## What happened?
+
+Keen reverted the code change in game version 1.202.067, released on 2023-04-18. Therefore this plugin is not required anymore. 
+The original performance fix has been put back into the Performance Improvements plugin, which will cache the formatted 
+definition IDs correctly as it did in the Warfare game versions before.
+
+---
+
+# Outdated description:
+
+## MyDefinitionId.ToString performance and deadlock fix
 
 This is a fix for the following Space Engineers tickets:
 - [Deadlock](https://support.keenswh.com/spaceengineers/pc/topic/27997-servers-deadlocked-on-load)
@@ -8,7 +24,7 @@ Plugins:
 - [Torch](https://torchapi.com/plugins/view/e368127c-0676-4ff0-9e8c-f32207dcb12a)
 - [Dedicated Server](https://github.com/viktor-ferenczi/defid-tostring-fix/releases)
 
-## Background
+### Background
 
 Had to make this fix as a separate plugin, because that the `MyDefinitionId.ToString` overridden 
 virtual method just could not be patched with Torch's patcher, 
@@ -32,7 +48,7 @@ Debug log output (the release build does not log anything):
 
 The cache hit rates are perfect.
 
-## Theory of operation
+### Theory of operation
 
 The L1 cache has no lock at all, that's a read-only dictionary. 
 
